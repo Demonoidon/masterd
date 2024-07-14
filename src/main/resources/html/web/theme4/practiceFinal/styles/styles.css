@@ -1,0 +1,218 @@
+/* Declaración de codificación de caracteres */
+@charset "utf-8";
+/* Inicio del Documento CSS */
+
+/* Importación de Google Font "Open Sans" */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+html,
+body {
+	margin: 0 auto;
+	padding: 0px;
+	width: 980px;
+	font-size: 14px;
+	color: #3c3c3c;
+	background-size: 100% auto;
+	line-height: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+#div_header {
+	clear: both;
+	box-sizing: border-box;
+	border: solid;
+	border-width: 10px;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+#div_header img {
+	width: 100%;
+	border: 1px solid black;
+}
+
+#div_footer {
+	border: 1px solid black;
+	font-size: 14px;
+	position: relative;
+	box-sizing: border-box;
+	clear: both;
+	color: black;
+	text-align: center;
+	padding: 30px;
+	margin: 8px;
+}
+
+/* Div del menú de la página */
+.div_menu {
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+	text-align: left;
+	margin-left: 5px;
+	text-decoration: none;
+	color: white;
+}
+
+.div_contenedor {
+	position: relative;
+	clear: both;
+}
+
+.div_contenedor section {
+	display: inline;
+}
+
+/* Estilos comunes de los botones de navegación */
+.boton,
+.boton:hover,
+.botonin,
+.botonin:hover {
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	width: 60px;
+	padding: 5px 30px;
+	white-space: nowrap;
+	margin: 5px 5px 10px;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+/* Estilos independientes de los botones de navegación */
+.boton {
+	background: #1A3653;
+	/* Old browsers */
+	background: linear-gradient(to bottom, #1A3653 0%, #294A68 44%, #345978 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.boton:hover {
+	background: #345978;
+	font-size: 15px;
+}
+
+.botonin {
+	background: rgb(197, 222, 234);
+	/* Old browsers */
+	background: linear-gradient(to bottom, #345978 0%, #429BC6 31%, #50CEFF 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.botonin:hover {
+	background: #50CEFF;
+	font-size: 15px;
+}
+
+.icon-text {
+	text-align: center;
+}
+
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* This line ensures labels wrap to a new line */
+	justify-content: space-around;
+}
+
+.image-container img {
+	width: 100px;
+	/* Adjust width as needed */
+	height: 100px;
+	margin: 5px;
+	/* Add margin for spacing */
+
+}
+
+.galery-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* This line ensures labels wrap to a new line */
+	justify-content: space-around;
+}
+
+.galery-container img {
+	width: 290px;
+	/* Adjust width as needed */
+	margin: 5px;
+	/* Add margin for spacing */
+
+}
+
+.flex-column {
+	flex-direction: column;
+	text-align: center;
+}
+
+.div_formulario {
+	height: 850px;
+	border: 1px solid black;
+	margin: 8px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+
+div.form {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+
+form {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+label {
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 100px;
+	text-align: left;
+	/*Change to right here if you want it close to the inputs*/
+}
+
+input,
+textarea {
+	display: inline-block;
+	float: left;
+	background-color: #D3D3D3;
+	margin-top: 10px;
+}
+
+.button_left {
+	display: inline-block;
+	float: left;
+	clear: left;
+	text-align: left;
+	/*Change to right here if you want it close to the inputs*/
+	width: 150px !important;
+	color: white !important;
+}
+
+.button_right {
+	display: inline-block;
+	float: left;
+	width: 150px !important;
+	color: white !important;
+}
+
+.button_center {
+	display: inline-block;
+	align: center;
+	text-align: center;
+	width: 150px !important;
+	color: white !important;
+}
+
+.price {
+	font-weight: 700;
+}
