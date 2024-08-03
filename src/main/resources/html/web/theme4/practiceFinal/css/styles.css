@@ -7,14 +7,34 @@
 
 html,
 body {
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas: "my-header""my-nav""my-main""my-footer";
+	grid-template-rows: 267px 65px 1fr 81px;
+
 	margin: 0 auto;
 	padding: 0px;
 	width: 980px;
 	font-size: 14px;
 	color: #3c3c3c;
-	background-size: 100% auto;
 	line-height: 18px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	grid-area: my-header;
+}
+
+nav {
+	grid-area: my-nav;
+}
+
+section {
+	grid-area: my-main;
+}
+
+footer {
+	grid-area: my-footer;
 }
 
 h1 {
@@ -137,6 +157,7 @@ h1 {
 
 .galery-container img {
 	width: 290px;
+	height: 193px;
 	/* Adjust width as needed */
 	margin: 5px;
 	/* Add margin for spacing */
@@ -215,4 +236,18 @@ textarea {
 
 .price {
 	font-weight: 700;
+}
+
+.social-link {
+	height: 15px;
+	width: 15px;
+}
+
+.address-container img {
+	width: 400px;
+	/* Adjust width as needed */
+	height: 400px;
+	margin: 5px;
+	/* Add margin for spacing */
+
 }

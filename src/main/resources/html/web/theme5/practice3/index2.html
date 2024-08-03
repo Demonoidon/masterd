@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Array</title>
 </head>
 <body>
-$END$
+<script>
+    var array = new Array();
+    function add(){
+    var variable1 = document.getElementById("campo").value;
+    if(variable1){
+    array.push(variable1);
+    }
+    console.log(array);
+    }
+    function show(){
+    alert(array);
+    }
+</script>
+<input type="text" id="campo">
+<button onclick="add()">add</button>
+<button onclick="show()">show</button>
 </body>
 </html>
